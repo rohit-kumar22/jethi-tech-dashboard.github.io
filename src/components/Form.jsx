@@ -39,14 +39,20 @@ export default function Form() {
   return (
     <>
       <Grid container>
-        <Grid item xs={12} mt={5} px={15}>
-          <Grid container>
+        <Grid item xs={12} mt={5} px={15} mr={2}>
+          <Grid
+            container
+            sx={{
+              p: 3,
+              boxShadow: "0px 0px 4px rgba(0, 0, 0, 0.3)",
+              borderRadius: "10px",
+            }}>
             <Grid item xs={8}>
               <Typography sx={styles.heading}>
                 Get in Touch With Us To Connect
               </Typography>
               <Typography sx={styles.sign}>Contact Us</Typography>
-              <Box sx={{ display: "flex", gap: "25px", mt: 2 }}>
+              <Box sx={{ display: "flex", gap: "50px", mt: 2 }}>
                 <TextField
                   id="outlined-basic"
                   label="Full Name"
@@ -62,7 +68,7 @@ export default function Form() {
                   sx={styles.input_fields}
                 />
               </Box>
-              <Box sx={{ display: "flex", gap: "25px", mt: 2 }}>
+              <Box sx={{ display: "flex", gap: "50px", mt: 2 }}>
                 <FormControl fullWidth sx={styles.input_fields}>
                   <InputLabel size="small">Country</InputLabel>
                   <Select
@@ -112,18 +118,16 @@ export default function Form() {
               </Box>
             </Grid>
             <Grid item xs={4}>
-              <Grid conatiner m={5}>
-                <Grid item xs={12}>
-                  <img
-                    src={form_pic}
-                    sx={{
-                      maxWidth: "200px",
-                      maxHeight: "200px",
-                      margin: "auto",
-                      objectFit: "cover",
-                    }}></img>
-                </Grid>
-              </Grid>
+              <Box pl={10}>
+                <img
+                  src={form_pic}
+                  style={{
+                    width: "300px",
+                    height: "280px",
+                    margin: "auto",
+                    objectFit: "cover",
+                  }}></img>
+              </Box>
             </Grid>
           </Grid>
         </Grid>

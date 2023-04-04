@@ -37,7 +37,7 @@ const styles = {
 export default function Footer() {
   return (
     <>
-      <Grid container sx={{ backgroundColor: "#002550" }} px={5} pb={2}>
+      <Grid container sx={{ backgroundColor: "#002550" }} px={5} pb={2} mt={5}>
         <Grid item xs={12}>
           <Grid container mt={5}>
             <Grid itme xs={3}>
