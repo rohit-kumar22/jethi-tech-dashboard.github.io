@@ -51,6 +51,7 @@ const styles = {
 
 const blogsJson = [
   {
+    id: 1,
     img: home1,
     date: "09 jun 2022",
     source: "By admin",
@@ -58,6 +59,7 @@ const blogsJson = [
     body: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.",
   },
   {
+    id: 2,
     img: home2,
     date: "09 jun 2022",
     source: "By admin",
@@ -65,7 +67,16 @@ const blogsJson = [
     body: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.",
   },
   {
+    id: 3,
     img: home3,
+    date: "09 jun 2022",
+    source: "By admin",
+    heading: "Guide for personal property Buying",
+    body: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.",
+  },
+  {
+    id: 4,
+    img: home1,
     date: "09 jun 2022",
     source: "By admin",
     heading: "Guide for personal property Buying",
@@ -74,10 +85,14 @@ const blogsJson = [
 ];
 
 export default function Blogs() {
-  const [cardsLength, setCardsLength] = useState(0);
+  const [cardsLength, setCardsLength] = useState(1);
 
-  const handleCardsLength = () => {
-    setCardsLength(cardsLength + 4);
+  const handleCardsLength = (value) => {
+    if (value === "plus") {
+      setCardsLength((prev) => prev + 1);
+    } else if (value === "minus") {
+      setCardsLength((prev) => prev - 1);
+    }
   };
   return (
     <>
@@ -92,67 +107,74 @@ export default function Blogs() {
         </Box>
 
         <Box sx={{ display: "flex", gap: "20px" }}>
-          <Box sx={styles.actions}>
+          <Box sx={styles.actions} onClick={() => handleCardsLength("minus")}>
             <Typography pt={1}>
               <ArrowLeftIcon />
             </Typography>
           </Box>
           <Grid container spacing={2} mt={5}>
-            {blogsJson.map((element, index) => (
-              <Grid key={index} xs={4} sx={{}}>
-                <Box
-                  sx={{
-                    mx: 2,
-                    p: 3,
-                    boxShadow: "0px 0px 4px rgba(0, 0, 0, 0.3)",
-                    borderRadius: "10px",
-                  }}>
-                  <Box>
-                    <img width={"100%"} src={element.img}></img>
-                  </Box>
-                  <Box>
-                    <Typography sx={styles.analysis}>
-                      Real State, Analysis
-                    </Typography>
-                    <Box sx={styles.date}>
-                      <Box sx={{ display: "flex" }}>
-                        <CalendarMonthIcon />
-                        <Typography>{element.date}</Typography>
-                      </Box>
-                      <Typography>{element.source}</Typography>
+            {blogsJson
+              .filter(
+                (item) => item.id >= cardsLength && item.id < cardsLength + 3
+              )
+              .map((element, index) => (
+                <Grid key={index} xs={4} sx={{}}>
+                  <Box
+                    sx={{
+                      mx: 2,
+                      p: 3,
+                      boxShadow: "0px 0px 4px rgba(0, 0, 0, 0.3)",
+                      borderRadius: "10px",
+                    }}>
+                    <Box>
+                      <img width={"100%"} src={element.img}></img>
                     </Box>
-                    <Typography
-                      sx={{
-                        fontWeight: "600",
-                        fontSize: "22px",
-                        color: "#002550",
-                        py: 1,
-                      }}>
-                      {element.heading}
-                    </Typography>
+                    <Box>
+                      <Typography sx={styles.analysis}>
+                        Real State, Analysis
+                      </Typography>
+                      <Box sx={styles.date}>
+                        <Box sx={{ display: "flex" }}>
+                          <CalendarMonthIcon />
+                          <Typography>{element.date}</Typography>
+                        </Box>
+                        <Typography>{element.source}</Typography>
+                      </Box>
+                      <Typography
+                        sx={{
+                          fontWeight: "600",
+                          fontSize: "22px",
+                          color: "#002550",
+                          py: 1,
+                        }}>
+                        {element.heading}
+                      </Typography>
+                    </Box>
+                    <Box>
+                      <Typography
+                        sx={{
+                          fontWeight: "400",
+                          fontSize: "14px",
+                          color: "#1A1A1A",
+                          opacity: 0.6,
+                          py: 1,
+                        }}>
+                        {element.body}
+                      </Typography>
+                    </Box>
+                    <Box sx={{ pt: 1 }}>
+                      <Button
+                        size="large"
+                        variant="outlined"
+                        sx={styles.button}>
+                        View More <ArrowForwardIcon />
+                      </Button>
+                    </Box>
                   </Box>
-                  <Box>
-                    <Typography
-                      sx={{
-                        fontWeight: "400",
-                        fontSize: "14px",
-                        color: "#1A1A1A",
-                        opacity: 0.6,
-                        py: 1,
-                      }}>
-                      {element.body}
-                    </Typography>
-                  </Box>
-                  <Box sx={{ pt: 1 }}>
-                    <Button size="large" variant="outlined" sx={styles.button}>
-                      View More <ArrowForwardIcon />
-                    </Button>
-                  </Box>
-                </Box>
-              </Grid>
-            ))}
+                </Grid>
+              ))}
           </Grid>
-          <Box sx={styles.actions}>
+          <Box sx={styles.actions} onClick={() => handleCardsLength("plus")}>
             <Typography pt={1}>
               <ArrowRightIcon />
             </Typography>
