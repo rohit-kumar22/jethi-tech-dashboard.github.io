@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/jethi-tech-dashboard.github.io/static/css/main.073c9b0a.css",
+    "main.js": "/jethi-tech-dashboard.github.io/static/js/main.d06ed1a2.js",
+    "static/js/787.6ff737e1.chunk.js": "/jethi-tech-dashboard.github.io/static/js/787.6ff737e1.chunk.js",
+    "static/media/banner.svg": "/jethi-tech-dashboard.github.io/static/media/banner.194adbd96e2ee94c450847c622671d69.svg",
+    "static/media/offeringCard3.svg": "/jethi-tech-dashboard.github.io/static/media/offeringCard3.339c52764bab3ccac9753ff6b2cb5e40.svg",
+    "static/media/offeringCard1.svg": "/jethi-tech-dashboard.github.io/static/media/offeringCard1.5d2f5edd282ac2d90222bb45084c259c.svg",
+    "static/media/offeringCard2.svg": "/jethi-tech-dashboard.github.io/static/media/offeringCard2.c4ed60b62d46d3d7a1702400d794b2d5.svg",
+    "static/media/person1.svg": "/jethi-tech-dashboard.github.io/static/media/person1.647c388f132a99a8e1e9cfab21b61d4d.svg",
+    "static/media/home1.png": "/jethi-tech-dashboard.github.io/static/media/home1.c4ca9169e6fc8b6c93af.png",
+    "static/media/home2.png": "/jethi-tech-dashboard.github.io/static/media/home2.2507677daf6718c4ea31.png",
+    "static/media/home3.png": "/jethi-tech-dashboard.github.io/static/media/home3.cf255b14782868e10fa4.png",
+    "static/media/homeImg.svg": "/jethi-tech-dashboard.github.io/static/media/homeImg.23040d902f76cd9a80ceff5f8b61784b.svg",
+    "static/media/form_pic.svg": "/jethi-tech-dashboard.github.io/static/media/form_pic.62959508ceee752142dc59489df0cc17.svg",
+    "static/media/person2.svg": "/jethi-tech-dashboard.github.io/static/media/person2.211750042dae6ad120c39a50da530755.svg",
+    "static/media/person3.svg": "/jethi-tech-dashboard.github.io/static/media/person3.6b4feb9e82d4e6c061a321c3098485f0.svg",
+    "static/media/logo.svg": "/jethi-tech-dashboard.github.io/static/media/logo.422de1f500a7ee266979956d6b2eedc2.svg",
+    "static/media/logoWhite.svg": "/jethi-tech-dashboard.github.io/static/media/logoWhite.91a269008bbae1178087bbad7bfd163d.svg",
+    "index.html": "/jethi-tech-dashboard.github.io/index.html",
+    "main.073c9b0a.css.map": "/jethi-tech-dashboard.github.io/static/css/main.073c9b0a.css.map",
+    "main.d06ed1a2.js.map": "/jethi-tech-dashboard.github.io/static/js/main.d06ed1a2.js.map",
+    "787.6ff737e1.chunk.js.map": "/jethi-tech-dashboard.github.io/static/js/787.6ff737e1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.d06ed1a2.js"
+  ]
+}
