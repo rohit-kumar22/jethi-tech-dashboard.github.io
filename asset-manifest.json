@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/jethi-tech-dashboard.github.io/static/css/main.073c9b0a.css",
-    "main.js": "/jethi-tech-dashboard.github.io/static/js/main.e88ba973.js",
+    "main.js": "/jethi-tech-dashboard.github.io/static/js/main.0b15cb13.js",
     "static/js/787.6ff737e1.chunk.js": "/jethi-tech-dashboard.github.io/static/js/787.6ff737e1.chunk.js",
     "static/media/banner.svg": "/jethi-tech-dashboard.github.io/static/media/banner.194adbd96e2ee94c450847c622671d69.svg",
     "static/media/offeringCard3.svg": "/jethi-tech-dashboard.github.io/static/media/offeringCard3.339c52764bab3ccac9753ff6b2cb5e40.svg",
@@ -19,11 +19,11 @@
     "static/media/logoWhite.svg": "/jethi-tech-dashboard.github.io/static/media/logoWhite.91a269008bbae1178087bbad7bfd163d.svg",
     "index.html": "/jethi-tech-dashboard.github.io/index.html",
     "main.073c9b0a.css.map": "/jethi-tech-dashboard.github.io/static/css/main.073c9b0a.css.map",
-    "main.e88ba973.js.map": "/jethi-tech-dashboard.github.io/static/js/main.e88ba973.js.map",
+    "main.0b15cb13.js.map": "/jethi-tech-dashboard.github.io/static/js/main.0b15cb13.js.map",
     "787.6ff737e1.chunk.js.map": "/jethi-tech-dashboard.github.io/static/js/787.6ff737e1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.e88ba973.js"
+    "static/js/main.0b15cb13.js"
   ]
 }
