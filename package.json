@@ -2,7 +2,7 @@
   "name": "jethitech-assignment",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/rohit-kumar22/jethi-tech-dashboard.github.io/",
+  "homepage": "https://rohit-kumar22.github.io/jethi-tech-dashboard.github.io/",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
